@@ -6,8 +6,8 @@
     android:orientation="vertical">
   <View
       android:id="@+id/topview"
-  android:layout_width="match_parent"
-  android:layout_height="200dp"
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
       android:background="@drawable/view"
       />
 
@@ -16,19 +16,19 @@
       android:layout_height="match_parent"
       android:layout_below="@id/topview"
       android:layout_marginTop="-88dp"
-      android:rowCount="2"
+      android:rowCount="3"
       android:columnCount="2"
       >
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card1R"
-      android:layout_height="150dp"
-      android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_width="150dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-      android:layout_marginLeft="24dp"
+        android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
-       app:cardCornerRadius="15dp"
+        app:cardCornerRadius="15dp"
         app:cardElevation="12dp"
         android:layout_row="1"
         android:layout_column="0"
@@ -54,11 +54,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rectangle"
-          android:layout_gravity="center_horizontal"
-          android:textSize="18sp"
-          android:textStyle="bold"
-          android:textColor="@color/purple_200"
-          />
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_200"
+            />
 
 
 
@@ -190,7 +190,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Triangle"
+            android:text="@string/triangle"
             android:layout_gravity="center_horizontal"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -204,4 +204,12 @@
 
   </GridLayout>
 
-  </RelativeLayout>
+  <Button
+      android:id="@+id/button2"
+      android:layout_width="wrap_content"
+      android:layout_height="71dp"
+      android:text="Exit"
+      android:textColor="@color/white"
+      android:backgroundTint="#BA85FB" />
+
+</RelativeLayout>

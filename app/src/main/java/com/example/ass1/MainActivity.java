@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
     double radius;
     double Result;
     private  Button count;
-    private Button Exit;
     private EditText editWidth;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -38,20 +38,17 @@ public class MainActivity extends AppCompatActivity {
         text1=findViewById(R.id.textView1);
         text4=findViewById(R.id.textView5);
         edittext1= findViewById(R.id.Edittext);
-        text1.setVisibility(View.GONE);
-        text4.setVisibility(View.GONE);
-        edittext1.setVisibility(View.GONE);
+
         count=findViewById(R.id.button8);
         editWidth =findViewById(R.id.edittext);
-        editWidth.setVisibility(View.GONE);
-        Exit=findViewById(R.id.exitbut);
+
 
 
         Intent intent = getIntent();
         String message = intent.getStringExtra("message");
 
         if (message != null ){
-            if (message =="Rectangle"){
+            if (message.equals("Rectangle")){
                 Toast.makeText(MainActivity.this, "You've chosen a Rectangle shape.", Toast.LENGTH_SHORT).show();
 
 
@@ -78,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
             }else
-            if (message =="Triangle"){
+            if (message.equals("Triangle")){
                 text1.setText("Triangle: A = X * Y (where A is the area, X is the length, and Y is the width");
                 text1.setVisibility(View.VISIBLE);
                 text4.setVisibility(View.VISIBLE);
@@ -103,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
             else
-                if (message =="Circle") {
+                if (message.equals("Circle")) {
 
                     text1.setText("Circle: A = πr² (where A is the area and r is the radius");
                     text1.setVisibility(View.VISIBLE);
@@ -148,7 +145,27 @@ public class MainActivity extends AppCompatActivity {
                     });
 
                 }
-                }
+
+        }
+
+        but1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent = new Intent(MainActivity.this, Activity3.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                }, 1000);
+
+
+            }
+        });
+
+
+
         }
         }
 
