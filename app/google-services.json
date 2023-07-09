@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "757347998391",
+    "firebase_url": "https://healthcareplusandroidpro-default-rtdb.firebaseio.com",
+    "project_id": "healthcareplusandroidpro",
+    "storage_bucket": "healthcareplusandroidpro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757347998391:android:82f4d92c15dcef8cf54b32",
+        "android_client_info": {
+          "package_name": "com.example.ass1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757347998391-sib2qdti4edkmt7bdm7r1ivsi7kvadn3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJyxSF59wIs72UFJLqy4Wcj3pabTvbxpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757347998391-sib2qdti4edkmt7bdm7r1ivsi7kvadn3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757347998391:android:d529f5f47d9f9e7cf54b32",
+        "android_client_info": {
+          "package_name": "com.example.healthcarplus_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757347998391-sib2qdti4edkmt7bdm7r1ivsi7kvadn3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJyxSF59wIs72UFJLqy4Wcj3pabTvbxpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757347998391-sib2qdti4edkmt7bdm7r1ivsi7kvadn3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757347998391:android:275f26c54dd069eef54b32",
+        "android_client_info": {
+          "package_name": "com.example.healthcarplusapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757347998391-sib2qdti4edkmt7bdm7r1ivsi7kvadn3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJyxSF59wIs72UFJLqy4Wcj3pabTvbxpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757347998391-sib2qdti4edkmt7bdm7r1ivsi7kvadn3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
